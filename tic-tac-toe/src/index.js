@@ -79,7 +79,7 @@ function Square(props) {
           xIsNext: (step % 2) === 0,
         });
     }
-    rrender() {
+    render() {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);
